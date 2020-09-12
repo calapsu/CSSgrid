@@ -34,6 +34,11 @@ h1 {
   width: 95%;
   margin: 0 auto;
 }
+p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
 
 img {
   max-width: 100%;
@@ -126,4 +131,26 @@ img {
     grid-row: 5 /6;
     grid-column: 2 /4;
   }
+}
+
+/* nosotros */
+
+@media (min-width: 768px) {
+  .container-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+.footer {
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.copyright {
+  font-family: var(--fuentePrincipal);
+  font-size: 2.2rem;
 }
