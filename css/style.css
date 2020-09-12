@@ -23,6 +23,22 @@ body {
   font-size: 2rem;
 }
 
+h1 {
+  color: var(--secundario);
+  text-align: center;
+  font-size: 4rem;
+  font-family: var(--fuentePrincipal);
+}
+.container {
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
 .header {
   display: grid;
   justify-content: center;
@@ -51,4 +67,63 @@ body {
 
 .bar .nav a:hover {
   color: var(--secundario);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product {
+  background-color: var(--primarioOscuro);
+  padding: 1rem;
+}
+
+.content-product p {
+  font-family: var(--fuentePrincipal);
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.content-product .title {
+  font-size: 3rem;
+}
+
+.content-product .price {
+  font-size: 2.8rem;
+  color: var(--secundario);
+}
+
+.graphic {
+  min-height: 300px;
+  grid-column: 1 / 3;
+  background-size: cover;
+  background-position: center center;
+}
+
+.graphic-1 {
+  background-image: url("../img/grafico1.jpg");
+  grid-row: 2 /3;
+}
+
+.graphic-2 {
+  background-image: url("../img/grafico2.jpg");
+  grid-row: 8/9;
+}
+
+@media (min-width: 768px) {
+  .graphic-2 {
+    grid-row: 5 /6;
+    grid-column: 2 /4;
+  }
 }
